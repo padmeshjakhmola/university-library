@@ -26,10 +26,12 @@ export const sendEmail = async ({
       provider: resend({ token: config.env.resendToken }),
     },
     body: {
-      from: "University Library <hello.universitylibrary.store>",
+      from: "University Library <contact@universitylibrary.store>",
       to: [email],
       subject: subject,
       html: message,
     },
   });
 };
+
+// 3:52:56
