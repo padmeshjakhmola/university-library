@@ -8,6 +8,13 @@
       "when": 1738484066815,
       "tag": "0000_special_doctor_faustus",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1739512721994,
+      "tag": "0001_fresh_forgotten_one",
+      "breakpoints": true
     }
   ]
 }
