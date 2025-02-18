@@ -52,7 +52,7 @@ const BookCover = ({
           fill
           className="rounded-sm object-fill"
           loading="lazy"
-          lqip={{ active: true }}
+          // lqip={{ active: true }}
         />
       </div>
     </div>

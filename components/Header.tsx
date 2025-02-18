@@ -22,7 +22,7 @@ const Header = () => {
         <Image src="./icons/logo.svg" alt="logo" width={40} height={40} />
       </Link>
       <ul className="flex flex-row items-center gap-8">
-        <li>
+        {/* <li> */}
           {/* <Link href="/my-profile">
             <Avatar>
               <AvatarFallback className="bg-amber-100">
@@ -31,7 +31,7 @@ const Header = () => {
             </Avatar>
           </Link> */}
           <Button onClick={handleLogout}>Logout</Button>
-        </li>
+        {/* </li> */}
       </ul>
     </header>
   );
