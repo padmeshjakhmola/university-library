@@ -1,3 +1,5 @@
+"use client";
+
 import { cn, getInitials } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,8 +7,15 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Session } from "next-auth";
 import { signOut } from "next-auth/react";
 import { Button } from "./ui/button";
+import { useRouter } from "next/navigation";
 
 const Header = () => {
+  const router = useRouter();
+
+  const handleLogout = async () => {
+    await signOut({ redirect: false });
+    router.push("/sign-in");
+  };
   return (
     <header className="my-10 flex justify-between gap-5">
       <Link href="/">
@@ -21,16 +30,7 @@ const Header = () => {
               </AvatarFallback>
             </Avatar>
           </Link> */}
-          <form
-            action={async () => {
-              "use server";
-
-              await signOut();
-            }}
-            className="mb-10"
-          >
-            <Button>Logout</Button>
-          </form>
+          <Button onClick={handleLogout}>Logout</Button>
         </li>
       </ul>
     </header>
