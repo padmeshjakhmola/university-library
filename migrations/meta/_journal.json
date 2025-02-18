@@ -22,6 +22,20 @@
       "when": 1739874064334,
       "tag": "0002_flaky_the_fallen",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1739880998375,
+      "tag": "0003_certain_mimic",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1739882316231,
+      "tag": "0004_perpetual_puck",
+      "breakpoints": true
     }
   ]
 }

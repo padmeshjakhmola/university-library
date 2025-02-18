@@ -18,10 +18,10 @@ const Layout = async ({ children }: { children: ReactNode }) => {
     .from(users)
     .where(eq(users.id, session.user.id))
     .limit(1)
-    .then((res) => res[0]?.isAdmin === "ADMIN");
+    .then((res) => res[0]?.isAdmin === "APPROVED");
 
   if (!isAdmin) redirect("/");
-  
+
   return (
     <main className="flex min-h-screen w-full flex-row">
       <Sidebar session={session} />
