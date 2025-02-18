@@ -15,6 +15,13 @@
       "when": 1739512721994,
       "tag": "0001_fresh_forgotten_one",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1739874064334,
+      "tag": "0002_flaky_the_fallen",
+      "breakpoints": true
     }
   ]
 }
