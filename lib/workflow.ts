@@ -1,6 +1,7 @@
 import { Client as WorkFlowClient } from "@upstash/workflow";
 import config from "@/lib/config";
 import { Client as QStashClient, resend } from "@upstash/qstash";
+import WelcomeEmail from "@/components/template/WelcomeEmail";
 
 export const workflowClient = new WorkFlowClient({
   baseUrl: config.env.upstash.qstashUrl,
@@ -29,7 +30,8 @@ export const sendEmail = async ({
       from: "University Library <contact@universitylibrary.store>",
       to: [email],
       subject: subject,
-      html: message,
+      // html: message,
+      react: WelcomeEmail({ message }),
     },
   });
 };
