@@ -35,13 +35,15 @@ export default async function RootLayout({
 }>) {
   const session = await auth();
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <SessionProvider session={session}>
         <head>
-          <script
-            src="https://unpkg.com/react-scan/dist/auto.global.js"
-            async
-          />
+          {process.env.NODE_ENV === "development" && (
+            <script
+              src="https://unpkg.com/react-scan/dist/auto.global.js"
+              async
+            />
+          )}
         </head>
         <body
           className={`${ibmPlexSans.className} ${bebasNeue.variable} antialiased`}
