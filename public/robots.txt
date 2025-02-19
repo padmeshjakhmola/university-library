@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://universitylibrary.store
+
+# Sitemaps
+Sitemap: https://universitylibrary.store/sitemap.xml

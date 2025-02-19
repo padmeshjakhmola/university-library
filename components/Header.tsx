@@ -1,13 +1,5 @@
-"use client";
-
-import { cn, getInitials } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Session } from "next-auth";
-import { signOut } from "next-auth/react";
-import { Button } from "./ui/button";
-import { useRouter } from "next/navigation";
 import AvatarImageComponent from "./AvatarImageComponent";
 
 const Header = () => {

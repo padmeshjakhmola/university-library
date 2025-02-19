@@ -28,6 +28,15 @@ export const metadata: Metadata = {
     "BookWise is a book borrowing university library management solution.",
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Library",
+  name: "BookWise",
+  url: "https://universitylibrary.store",
+  description:
+    "BookWise is a book borrowing university library management solution.",
+};
+
 export default async function RootLayout({
   children,
 }: Readonly<{
@@ -44,6 +53,23 @@ export default async function RootLayout({
               async
             />
           )}
+          <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+          <title>BookWise | Digital Library Management</title>
+          <meta
+            name="description"
+            content="Manage your university's digital library with ease."
+          />
+          <meta
+            name="keywords"
+            content="university, library, books, digital library, library management, BookWise, bookwise"
+          />
+          <meta name="robots" content="index, follow" />
+          <meta property="og:title" content="University Library" />
+          <meta
+            property="og:description"
+            content="The best platform for library management."
+          />
+          <meta property="og:url" content="https://universitylibrary.store" />
         </head>
         <body
           className={`${ibmPlexSans.className} ${bebasNeue.variable} antialiased`}
