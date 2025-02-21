@@ -38,7 +38,6 @@ export const metadata: Metadata = {
     type: "website",
     title: "BookWise",
   },
-  robots: "noindex, nofollow",
 };
 
 export default async function RootLayout({
