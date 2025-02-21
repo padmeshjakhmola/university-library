@@ -14,8 +14,8 @@ import {
 } from "@react-email/components";
 import * as React from "react";
 
-const baseUrl = process.env.VERCEL_URL
-  ? `https://${process.env.NEXT_PUBLIC_PROD_API_ENDPOINT}`
+const baseUrl = process.env.NEXT_PUBLIC_PROD_API_ENDPOINT
+  ? `${process.env.NEXT_PUBLIC_PROD_API_ENDPOINT}`
   : "";
 
 export default function WelcomeEmail({ message }: { message: string }) {
