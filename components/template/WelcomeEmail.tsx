@@ -31,7 +31,7 @@ export default function WelcomeEmail({ message }: { message: string }) {
                   src={`${baseUrl}/icons/logo.svg`}
                   width="40"
                   height="37"
-                  alt="Vercel"
+                  alt="logo"
                   className="my-0 mx-auto"
                 />
               </Column>
@@ -58,7 +58,10 @@ export default function WelcomeEmail({ message }: { message: string }) {
 
           {/* Login Button */}
           <Section style={styles.buttonContainer}>
-            <Button style={styles.button} href="https://bookwise.com/sign-in">
+            <Button
+              style={styles.button}
+              href="https://www.universitylibrary.store/sign-in"
+            >
               Login to BookWise
             </Button>
           </Section>
