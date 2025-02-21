@@ -1,7 +1,21 @@
 import { auth } from "@/auth";
+import { Metadata } from "next";
 import Image from "next/image";
 import { redirect } from "next/navigation";
 import { ReactNode } from "react";
+
+export const metadata: Metadata = {
+  title: "Sign Up | BookWise",
+  description:
+    "BookWise is a book borrowing university library management solution.. Please complete all fields and upload a valid university ID to gain access.",
+  openGraph: {
+    title: "Sign Up | BookWise",
+    description:
+      "BookWise is a book borrowing university library management solution.. Please complete all fields and upload a valid university ID to gain access.",
+    url: "/sign-up",
+    type: "website",
+  },
+};
 
 const Layout = async ({ children }: { children: ReactNode }) => {
   const session = await auth();
