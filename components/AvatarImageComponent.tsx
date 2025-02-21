@@ -27,6 +27,7 @@ const AvatarImageComponent = () => {
             <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
             <AvatarFallback className="bg-amber-100">
               {/* {getInitials(session?.user?.name || "IN")} */}
+
               <p>UL</p>
             </AvatarFallback>
           </Avatar>
